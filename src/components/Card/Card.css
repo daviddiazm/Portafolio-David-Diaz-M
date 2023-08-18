@@ -1,0 +1,20 @@
+
+  .card {
+    width: 90%;
+    max-width: 200px;
+    height: 30vh;
+    max-height: 210px;
+    padding: 10px;
+    background-color: var(--Gray20);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    z-index: 5;
+  }
+
+  .card i {
+    font-size: 5vh;
+  }

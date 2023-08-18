@@ -1,0 +1,10 @@
+button {
+  margin-top: 25px;
+  padding: 8px 20px;
+  background-color: #9ba4ed0d;
+  color: var(--Wihte);
+  border: 2px solid;
+  border-color: #9BA4ED;
+  border-radius: 11px;
+  cursor: pointer;
+}

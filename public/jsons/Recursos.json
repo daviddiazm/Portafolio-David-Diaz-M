@@ -1,0 +1,22 @@
+[
+    {
+            "text": "JavaScript",
+            "icon": "fa-brands fa-square-js"
+        
+    },
+    {
+            "text": "HTML 5",
+            "icon": "fa-brands fa-html5"
+        
+    },
+    {
+            "text": "CSS",
+            "icon": "fa-brands fa-css3-alt"
+        
+    },
+    {
+            "text": "React",
+            "icon": "fa-brands fa-react"
+        
+    }
+]
