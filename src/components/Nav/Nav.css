@@ -41,3 +41,49 @@
   text-decoration: none;
   position: relative;
 }
+
+@media (min-width: 992px) {
+  .nav {
+    visibility: visible;
+    height: 10vh;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5vw;
+  }
+
+  .nav__toggel {
+    display: none;
+    
+  }
+
+  .nav__menu {
+    height: 10vh;
+    padding: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5vw;
+    position: relative;
+    top: 15px;
+    left: 0%;
+  }
+  .menu__item {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--Wihte);
+    text-decoration: none;
+    position: relative;
+  }
+  .menu__link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Wihte);
+    text-decoration: none;
+    position: relative;
+  }
+}

@@ -3,22 +3,22 @@ import "./Nav.css"
 
 const Nav = () => {
   return (
-    <nav class="nav">
-      <button class="nav__toggel">
-        <i class="fa-solid fa-bars"></i>
+    <nav className="nav">
+      <button className="nav__toggel">
+        <i className="fa-solid fa-bars"></i>
       </button>
-      <ul class="nav__menu">
-        <li class="menu__item">
-          <a href="#" class="menu__link">Home</a>
+      <ul className="nav__menu">
+        <li className="menu__item">
+          <a href="#" className="menu__link">Home</a>
+        </li>
+        <li className="menu__item">
+          <a href="#" className="menu__link">Service</a>
+        </li>
+        <li className="menu__item">
+          <a href="#" className="menu__link">About us</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Service</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">About us</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Contact us</a>
+          <a href="#" className="menu__link">Contact us</a>
         </li>
       </ul>
     </nav>
