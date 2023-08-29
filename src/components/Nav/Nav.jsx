@@ -17,7 +17,7 @@ const Nav = () => {
         <li className="menu__item">
           <a href="#" className="menu__link">About us</a>
         </li>
-        <li class="menu__item">
+        <li className="menu__item">
           <a href="#" className="menu__link">Contact us</a>
         </li>
       </ul>
