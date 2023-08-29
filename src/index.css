@@ -36,6 +36,11 @@ h3 {
   font-weight: 500;
 }
 
+a {
+  font-family: 'Sen', sans-serif;
+  color: var(--Violet);
+}
+
 @font-face {
   font-family: Sen;
   src: url('/public/fonts/Sen-VariableFont_wght.ttf');

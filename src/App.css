@@ -40,3 +40,21 @@
   justify-content: center;
   gap: 50vw;
 }
+
+/* Proyects container */
+.Projects__container {
+  width: 100vw;
+  max-width: 1000px;
+  padding: 20px 10px;
+  border-radius: 15px;
+  background-color: var(--Gray20);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2vw;
+}
+
+.project {
+  width: 100px;
+}
