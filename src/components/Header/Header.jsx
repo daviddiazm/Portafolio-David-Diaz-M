@@ -12,7 +12,7 @@ const Header = () => {
           <h3>David Diaz Montenegro</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste reiciendis perferendis illo totam illum sit?
             Possimus debitis repudiandae asperiores quod, est libero praesentium recusandae natus?</p>
-          <Button/>
+          <Button text={"Click Here!"}/>
         </article>
         <section className="header__2">
           <img src="../public/imgs/AREmoji_20230204_193331_24458.gif" alt="" />
