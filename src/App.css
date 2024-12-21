@@ -35,6 +35,13 @@
   gap: 4rem;
 }
 
+.landing h2 {
+  padding: 1rem;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 600;
+}
+
 .certifications {
   width: 100vw;
   /* padding: 8vw; */
@@ -73,4 +80,47 @@
   align-items: center;
   /* gap: 2vw; */
   gap: 1rem;
+}
+
+
+
+
+/* contact */
+
+.contact {
+  margin-top: 20vh;
+  position: relative;
+  max-width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__box {
+  width: 90vw;
+  max-width: 500px;
+  height: 60vh;
+  background-color: var(--Gray20);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 5;
+}
+
+.box {
+  width: 90%;
+  height: 80%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 3rem;
 }

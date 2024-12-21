@@ -17,14 +17,14 @@ function App() {
 
   const lenguages = ["Angular", "React", "Vue"]
 
-  const nextPosition = (list) => {
-    if (position < list.length - 1) setPosition(position + 1)
-    if (position === list.length - 1) setPosition(0)
+  const nextPosition = () => {
+    if (position < Certifications.length - 1) setPosition(position + 1)
+    if (position === Certifications.length - 1) setPosition(0)
   }
 
-  const lastPosition = (list) => {
-    if (position <= list.length - 1 && position !== 0) setPosition(position - 1)
-    if (position === 0) setPosition(list.length - 1)
+  const lastPosition = () => {
+    if (position <= Certifications.length - 1 && position !== 0) setPosition(position - 1)
+    if (position === 0) setPosition(Certifications.length - 1)
   }
 
 
@@ -45,13 +45,13 @@ function App() {
       <section className='landing'>
         <h2><span>Certificaciones</span> de programacion, AWS, UX, SCRUM </h2>
         <div className='certifications'>
-          <Button onClick={() => { lastPosition(Certifications) }} text={"<-"} />
-          <CertificationCard
-            certificationName={Certifications[position].certificationName}
-            certificationDescription={Certifications[position].certificationDescription}
-            certificationImg={Certifications[position].certificationImg}
-            certificationLink={Certifications[position].certificationLink} />
-          <Button onClick={() => { nextPosition(Certifications) }} text={"->"} />
+          {/* <Button onClick={() => { lastPosition(Certifications) }} text={"<-"} /> */}
+          <CertificationCard 
+            certification={Certifications[position]}
+            moveNext={nextPosition}
+            movePrev={lastPosition}
+            />
+          {/* <Button onClick={() => { nextPosition(Certifications) }} text={"->"} /> */}
         </div>
       </section>
 
