@@ -43,14 +43,45 @@
 }
 
 .certifications {
-  width: 100vw;
   /* padding: 8vw; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
+.btn-certifications {
+  display: none;
+  /* display: flex; */
+  gap: 10vw;
+}
+
+.btn-certifications button {
+  padding: 5px 20px;
+  flex-shrink: 0;
+  /* background: 
+    radial-gradient(189.21% 70.1% at 15.34% 39.06%, rgba(131, 113, 243, 0.50) 0%, rgba(69, 156, 236, 0.00) 100%), 
+    radial-gradient(132.71% 129.73% at 63.64% -12.5%, #8528FB 0%, rgba(86, 84, 74, 0.12) 100%), 
+    radial-gradient(51.42% 94.92% at 19.32% 40.62%, #1864B7 0%, rgba(23, 61, 102, 0.56) 100%), 
+    radial-gradient(23.21% 114.66% at 43.75% -31.25%, rgba(24, 17, 24, 0.53) 21.25%, #000 100%), 
+    #030303; */
+  background: 
+    radial-gradient(189.21% 70.1% at 15.34% 39.06%, rgba(130, 113, 243, 0.313) 0%, rgba(69, 156, 236, 0.00) 100%), 
+    radial-gradient(132.71% 129.73% at 63.64% -12.5%, #8328fb6f 0%, rgba(86, 84, 74, 0.12) 100%), 
+    radial-gradient(51.42% 94.92% at 19.32% 40.62%, #1865b741 0%, rgba(23, 61, 102, 0.304) 100%), 
+    radial-gradient(23.21% 114.66% at 43.75% -31.25%, rgba(24, 17, 24, 0.53) 21.25%, #000 100%), 
+    #030303;
+  border: none; 
+  border-radius: 15px;
+  color: white; 
+  font-size: 1.5rem;
+  cursor: pointer; 
+}
+
+.btn-certification:active {
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.80) inset;
+}
 
 
 /* Proyects container */
@@ -123,4 +154,22 @@
 
 .box h2 {
   font-size: 3rem;
+}
+
+
+
+/* @media (min-width: 768px) and (max-width: 1023px) { */
+@media (min-width: 768px) {
+  
+}
+
+
+@media (min-width: 1024px) {
+  /* home */
+
+  /* certifications */
+
+  .btn-certifications {
+    display: flex;
+  }
 }

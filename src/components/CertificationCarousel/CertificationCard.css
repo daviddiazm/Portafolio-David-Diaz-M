@@ -1,35 +1,62 @@
 .card-certification {
-  width: 70vw;
+  width: 90vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
-  gap: 10rem;
+  gap: 10vw;
+
 }
 
 .card-certification img {
   width: 100%;
-  max-width: 700px;
+  /* max-width: 700px; */
   border-radius: 15px;
 }
 
 .certification_text {
   width: 100%;
-  /* max-width: 200px; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .certification_text p {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .certification_text h3 {
-  font-size: 2.5rem;
+  font-size: 55px;
   font-weight: bold;
   text-align: center;
 }
 
 .card-certification button {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .card-certification {
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .card-certification {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    /* justify-content: center; */
+  }
+
+  .card-certification img {
+    width: 450px;
+    height: 250px;
+  }
+
+  .certification_text {
+    max-width: 500px;
+  }
+  .certification_text h3{
+    text-align: start;
+  }
 }

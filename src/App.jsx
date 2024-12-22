@@ -43,15 +43,20 @@ function App() {
 
       {/* certificados */}
       <section className='landing'>
-        <h2><span>Certificaciones</span> de programacion, AWS, UX, SCRUM </h2>
         <div className='certifications'>
-          {/* <Button onClick={() => { lastPosition(Certifications) }} text={"<-"} /> */}
-          <CertificationCard 
+          <CertificationCard
             certification={Certifications[position]}
             moveNext={nextPosition}
             movePrev={lastPosition}
-            />
-          {/* <Button onClick={() => { nextPosition(Certifications) }} text={"->"} /> */}
+          />
+          {/* <div className="btn-certifications">
+            <Button onClick={() => { lastPosition() }} text={"<-"} />
+            <Button onClick={() => { nextPosition() }} text={"->"} />
+          </div> */}
+          <div className="btn-certifications">
+            <button className='btn-certification' onClick={() => { lastPosition() }} > {"<"} </button>
+            <button className='btn-certification' onClick={() => { nextPosition() }} > {">"} </button>
+          </div>
         </div>
       </section>
 
