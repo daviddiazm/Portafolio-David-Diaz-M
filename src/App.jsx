@@ -31,6 +31,13 @@ function App() {
   return (
     <div className='app'>
 
+    <img src="/imgs/png_img/Group 80.png" alt="" class="shape__1" />
+    <img src="/imgs/png_img/Frame 3529.png" alt="" class="shape__2" />
+    <img src="/imgs/png_img/Ellipse.png" alt="" class="shape__3" />
+    <img src="/imgs/png_img/Ellipse.png" alt="" class="shape__4" />
+    <img src="/imgs/png_img/Ellipse.png" alt="" class="shape__5" />
+    <img src="/imgs/png_img/Frame 3529.png" alt="" class="shape__6" />
+
       <Header />
       <section className="cards">
         <div className="cards__container">
@@ -49,10 +56,6 @@ function App() {
             moveNext={nextPosition}
             movePrev={lastPosition}
           />
-          {/* <div className="btn-certifications">
-            <Button onClick={() => { lastPosition() }} text={"<-"} />
-            <Button onClick={() => { nextPosition() }} text={"->"} />
-          </div> */}
           <div className="btn-certifications">
             <button className='btn-certification' onClick={() => { lastPosition() }} > {"<"} </button>
             <button className='btn-certification' onClick={() => { nextPosition() }} > {">"} </button>

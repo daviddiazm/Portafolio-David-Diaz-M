@@ -3,7 +3,54 @@
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 20vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.shape__1 {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  top: 0px;
+}
+
+.shape__2 {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  top: 80vh;
+  right: 10vw;
+}
+
+.shape__3 {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  top: 190vh;
+}
+
+.shape__4 {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  top: 300vh;
+  right: 20vw;
+}
+
+.shape__5 {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  top: 390vh;
+}
+
+.shape__6 {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  bottom: 5vh;
+  right: 10vw;
 }
 
 .cards {
@@ -28,7 +75,7 @@
 /* langing */
 
 .landing {
-  margin-top: 10vh;
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,16 +95,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .btn-certifications {
   display: none;
   /* display: flex; */
   gap: 10vw;
+
 }
 
-.btn-certifications button {
+.btn-certification {
+  position: relative;
   padding: 5px 20px;
   flex-shrink: 0;
   /* background: 
@@ -66,17 +115,23 @@
     radial-gradient(51.42% 94.92% at 19.32% 40.62%, #1864B7 0%, rgba(23, 61, 102, 0.56) 100%), 
     radial-gradient(23.21% 114.66% at 43.75% -31.25%, rgba(24, 17, 24, 0.53) 21.25%, #000 100%), 
     #030303; */
-  background: 
-    radial-gradient(189.21% 70.1% at 15.34% 39.06%, rgba(130, 113, 243, 0.313) 0%, rgba(69, 156, 236, 0.00) 100%), 
-    radial-gradient(132.71% 129.73% at 63.64% -12.5%, #8328fb6f 0%, rgba(86, 84, 74, 0.12) 100%), 
-    radial-gradient(51.42% 94.92% at 19.32% 40.62%, #1865b741 0%, rgba(23, 61, 102, 0.304) 100%), 
-    radial-gradient(23.21% 114.66% at 43.75% -31.25%, rgba(24, 17, 24, 0.53) 21.25%, #000 100%), 
+  background:
+    radial-gradient(189.21% 70.1% at 15.34% 39.06%, rgba(130, 113, 243, 0.313) 0%, rgba(69, 156, 236, 0.00) 100%),
+    radial-gradient(132.71% 129.73% at 63.64% -12.5%, #8328fb6f 0%, rgba(86, 84, 74, 0.12) 100%),
+    radial-gradient(51.42% 94.92% at 19.32% 40.62%, #1865b741 0%, rgba(23, 61, 102, 0.304) 100%),
+    radial-gradient(23.21% 114.66% at 43.75% -31.25%, rgba(24, 17, 24, 0.53) 21.25%, #000 100%),
     #030303;
-  border: none; 
+  border: none;
   border-radius: 15px;
-  color: white; 
+  color: white;
   font-size: 1.5rem;
-  cursor: pointer; 
+  cursor: pointer;
+  /* filter: blur(10px); */
+}
+
+.btn-certification p {
+  position: absolute;
+  z-index: 5;
 }
 
 .btn-certification:active {
@@ -94,7 +149,7 @@
   border-radius: 15px;
   background-color: var(--Gray20);
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 2vw;
@@ -159,9 +214,7 @@
 
 
 /* @media (min-width: 768px) and (max-width: 1023px) { */
-@media (min-width: 768px) {
-  
-}
+@media (min-width: 768px) {}
 
 
 @media (min-width: 1024px) {
@@ -171,5 +224,46 @@
 
   .btn-certifications {
     display: flex;
+  }
+
+
+  .shape__1 {
+    width: 1200px;
+    height: 1200px;
+    position: absolute;
+    top: -60vh;
+    left: 50vw;
+  }
+
+  .shape__2 {
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+    top: 20vh;
+    right: 40vw;
+  }
+
+  .shape__3 {
+    width: 1000px;
+    height: 1300px;
+    position: absolute;
+    top: 100vh;
+    left: 60vw;
+  }
+
+  .shape__4 {
+    width: 1000px;
+    height: 1700px;
+    position: absolute;
+    top: 210vh;
+    right: 60vw;
+  }
+
+  .shape__5 {
+    width: 1500px;
+    height: 1000px;
+    position: absolute;
+    top: 320vh;
+    left: 40vw;
   }
 }
