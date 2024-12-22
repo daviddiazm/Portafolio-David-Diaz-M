@@ -3,6 +3,7 @@
   overflow: hidden;
   /* width: 25vw; */
   width: 90vw;
+  max-width: 400px;
   height: 300px;
   /* max-width: 300px; */
   /* max-height: 300px; */
