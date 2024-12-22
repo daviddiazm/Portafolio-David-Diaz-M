@@ -3,15 +3,38 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: 10vw;
-
+  gap: 12vh;
 }
 
-.card-certification img {
+.landing__1 {
   width: 100%;
-  /* max-width: 700px; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.back__landing {
+  /* width: 80%; */
+  width: 100%;
+  height: 450px;
+  max-width: 400px;
+  position: absolute;
+  /* top: 1px; */
+}
+
+.img_landin {
+  /* width: 60%; */
+  max-width: 300px;
+  border-radius: 10%;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 500px;
   border-radius: 15px;
 }
+
 
 .certification_text {
   width: 100%;
@@ -35,8 +58,7 @@
 }
 
 @media (min-width: 768px) {
-  .card-certification {
-  }
+  .card-certification {}
 }
 
 
@@ -45,18 +67,34 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: start;
+    gap: 12vw;
     /* justify-content: center; */
   }
 
+
+  .back__landing {
+    height: 150%;
+    /* height: 100vh; */
+    max-width: 350px;
+    position: absolute;
+    top: -13%;
+    left: 2%;
+  }
+
+  .landing__1 {
+    width: 60%;
+  }
+
   .card-certification img {
-    width: 450px;
-    height: 250px;
+    /* width: 450px;
+    height: 250px; */
   }
 
   .certification_text {
     max-width: 500px;
   }
-  .certification_text h3{
+
+  .certification_text h3 {
     text-align: start;
   }
 }

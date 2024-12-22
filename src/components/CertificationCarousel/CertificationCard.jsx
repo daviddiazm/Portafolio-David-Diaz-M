@@ -31,7 +31,11 @@ const CertificationCard = ({ certification , moveNext, movePrev }) => {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}>
 
-      <img src={`${certificationImg}`} alt="" />
+      <div className='landing__1'>
+        {/* <img src="/imgs/png_img/Frame 3532.png" alt="" class="back__landing"/> */}
+        <img src="/imgs/png_img/Frame 3530.png" alt="" class="back__landing"/>
+        <img src={`${certificationImg}`} alt="" className='img_landin' />
+      </div>
       
       <article className='certification_text'>
         <h3> {certificationName} </h3>
