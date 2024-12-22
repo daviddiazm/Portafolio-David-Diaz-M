@@ -3,6 +3,7 @@ import "./Nav.css"
 
 const Nav = () => {
   return (
+    // <nav className="nav__slide">
     <nav className="nav">
       <button className="nav__toggel">
         <i className="fa-solid fa-bars"></i>
